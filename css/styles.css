@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Full black background */
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1); /* Transparent section background */
+    border-radius: 10px;
+    width: 80%;
+}
+
+h1, h2, h3 {
+    margin: 10px;
+}
+
+.input-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background: #333;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Animation for button */
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.1); /* Hover effect animation */
+}
+
+button:active {
+    transform: scale(0.95); /* Click effect animation */
+}
+
+.output-box {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#3d-model {
+    width: 100%;
+    height: 400px;
+    background-color: #111; /* Dark background for 3D model */
+    margin: 20px 0;
+    border: 1px solid #fff;
+}
+
+.applications {
+    margin-top: 30px;
+}
+
+.application {
+    margin-bottom: 20px;
+}
+
+.application-gif {
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid white;
+}

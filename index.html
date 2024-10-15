@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal's Law and Hydraulic Press</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="intro">
+            <h1>What is Pascal’s Law?</h1>
+            <h3>Pascal’s Law states that when pressure is applied to a confined fluid, that pressure is transmitted equally in all directions throughout the fluid. Think of it like squeezing a balloon: if you press on one part of the balloon, the entire balloon feels the pressure, not just the spot you squeezed.</h3>
+        </section>
+
+        <section class="hydraulic">
+            <h2>The Hydraulic Press: The Heavy Lifter</h2>
+            <h3>A hydraulic press is a machine that uses Pascal’s Law to amplify force. It can turn a small input force into a much larger output force, making it super useful in things like car brakes, garbage compactors, or even manufacturing metal parts.</h3>
+            <div id="video">
+                <img src="hy.jpg" alt="Labeled Hydraulic Press Diagram" class="responsive-image" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+            </div>
+            <h2>1. Two Pistons (Small and Large): Picture two pistons (imagine they are plungers) connected by a tube filled with oil. One piston is small, and one piston is large. <br><br><br>
+
+2. The small piston is like the button you press. The large piston is where the magic happens —  it’s where the heavy object gets lifted. Pascal’s Law in Action: When you push down on the small  piston, the pressure is transmitted through the fluid (oil), equally, to the large piston. <br><br><br>
+
+3. Force Multiplication: Here’s the cool part: the force you apply on the small piston gets multiplied     by the size difference between the pistons. If the large piston has 10 times the area of the small piston, the force on the large piston will be 10 times greater than the force you applied. That’s how you can lift really heavy objects with just a little effort!</h2>
+        </section>
+
+        <section class="formula-section">
+            <h3>Pascal's Law Formula:</h3>
+            <h3>Force (output) = Force (input) × Area of Large Piston / Area of Small Piston</h3>
+            
+            <div class="input-boxes">
+                <label for="inputForce">Input Force (N):</label>
+                <input type="number" id="inputForce" placeholder="Enter Input Force">
+
+                <label for="largePiston">Area of Large Piston (m²):</label>
+                <input type="number" id="largePiston" placeholder="Enter Area of Large Piston">
+
+                <label for="smallPiston">Area of Small Piston (m²):</label>
+                <input type="number" id="smallPiston" placeholder="Enter Area of Small Piston">
+
+                <label for="outputForce">Output Force (N):</label>
+                <input type="number" id="outputForce" placeholder="Calculated Output Force">
+
+                <button id="calcBtn" onclick="calculate()">Calculate</button>
+                <button id="resetBtn" onclick="resetFields()">Reset</button>
+            </div>
+
+            <div class="output-box">
+                <h4>Output Force: <span id="outputForceDisplay">0</span> N</h4>
+            </div>
+        </section>
+
+        <section class="applications">
+            <h2>Real-World Applications</h2>
+            <div class="application">
+                <h3>Hydraulic Press in Factories</h3>
+                <img src="images/hydraulic_press.gif" alt="Hydraulic Press in action" class="application-gif">
+            </div>
+            <div class="application">
+                <h3>Hydraulic Brakes in Cars</h3>
+                <img src="images/car_brakes.gif" alt="Car Hydraulic Brakes" class="application-gif">
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
